@@ -1,0 +1,312 @@
+/* Reset CSS para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #EAC926;
+    padding: 20px 0;
+}
+
+/* Estilos del banner */
+.banner {
+    width: 100%;
+    margin: 0;
+}
+
+/* Estilos de los titulares */
+.titulares {
+    font-size: 24px;
+}
+
+/* Estilos de los precios */
+.precios {
+    font-size: 18px;
+    display: block;
+    margin-right: 10px;
+}
+
+/* Estilos de las ofertas */
+.ofertas {
+    color: #39b54a;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/* Estilos de las descripciones */
+.descripciones {
+    display: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.articulo:hover{
+    .descripciones{
+        display: block;
+    }
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .caja-icono{
+        transform: rotate(-90deg);
+    }
+}
+
+/* Estilos de los elementos de bloque */
+.bloque {
+    display: block;
+}
+
+/* Estilos de las listas de ofertas y cuenta */
+.lista-ofertas,
+.lista-cuenta {
+    display: none;
+    list-style: none;
+}
+
+/* Estilos de los enlaces en las listas de ofertas y cuenta */
+.lista-ofertas li a,
+.lista-cuenta li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos del menú hamburguesa */
+.burger-menu {
+    text-align: center;
+}
+
+/* Estilos del botón de hamburguesa */
+.hamburguesa {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos del título de cuotas */
+.titulo-cuotas {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Estilos de las imágenes de productos y productos con descuento */
+.productos img,
+.productos-descuento img {
+    width: 90%;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    background-color: white;
+}
+
+/* Estilos de los iconos en el pie de página */
+.iconos {
+    font-size: 2em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+/* Estilos del texto de derechos de autor en el pie de página */
+.copyright {
+    text-align: left;
+}
+
+/* Estilos de los elementos de lista en el pie de página */
+footer ul li {
+    margin: 60px 0;
+}
+
+/* Estilos de las listas en el pie de página */
+footer ul {
+    padding-top: 15px;
+    margin: 0 10px;
+    list-style: none;
+}
+
+footer ul li:hover{
+    .iconos{
+        color: #aa9218;
+    }
+}
+
+/* Estilos del contenido principal */
+main {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Estilos de los artículos */
+.articulo {
+    margin: 10px 0;
+    transition: all .5s;
+}
+
+/* Estilos del contenido de los artículos */
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    margin: 0;
+}
+
+/* Estilos del icono de envío */
+.icono-envio {
+    color: #39b54a;
+    padding: 10px;
+}
+
+/* Estilos de la caja del icono de envío */
+.caja-icono {
+    display: inline-block;
+    text-align: end;
+    border-radius: 50%;
+    border: #39b54a 1px solid;
+    transition: all 2s;
+}
+
+/* Estilos del icono de camión */
+.icono-camion {
+    text-align: end;
+    width: 100%;
+}
+
+/* Estilos de la imagen del artículo */
+.imagen-articulo {
+    width: 100% !important;
+}
+
+/* Estilos de los productos y productos con descuento */
+.productos,
+.productos-descuento {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Estilos del contenedor del logo y la barra de búsqueda */
+.logo-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos del logo de Mercado Liebre */
+.logo-ml {
+    padding: 0 10px;
+    width: 50%;
+}
+
+/* Estilos de la barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    width: 50%;
+    padding: 0 10px;
+}
+
+/* Estilos del campo de entrada en la barra de búsqueda */
+.barra-busqueda input {
+    width: 90%;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.barra-busqueda input:target {
+    outline: none;
+}
+
+.barra-busqueda button[type="submit"]{
+    border-radius: 0 10px 10px 0;
+    border: none;
+    padding: 10px;
+}
+
+/* Estilos del contenedor de precios y ofertas */
+.precios-ofertas {
+    display: flex;
+}
+
+
+    
+/* Media Queries */
+@media (min-width: 361px) {
+
+    /* Estilos para los artículos en pantallas más grandes */
+    .articulo {
+        width: 43%;
+        margin: 10px;
+    }
+
+    /* Mostrar las listas de ofertas y cuenta */
+    .lista-ofertas,
+    .lista-cuenta {
+        display: block;
+    }
+
+    /* Ocultar el menú hamburguesa */
+    .hamburguesa {
+        display: none;
+    }
+
+    /* Estilos para el título de cuotas en pantallas más grandes */
+    .titulo-cuotas {
+        width: 33%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    /* Estilos para el logo de Mercado Liebre en pantallas más grandes */
+    .logo-ml {
+        width: 33%;
+    }
+
+    /* Estilos para la barra de búsqueda en pantallas más grandes */
+    .barra-busqueda {
+        width: 33%;
+        height: 30px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    /* Estilos para las listas en pantallas más grandes */
+    .listas {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista-cuenta,
+    .lista-ofertas {
+        margin: 20px 20px 0 20px;
+        display: flex;
+        gap: 15px;
+        align-items: space-between;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Estilos para los artículos en pantallas aún más grandes */
+    .articulo {
+        max-width: 22%;
+    }
+
+    footer ul {
+        display: flex;
+    }
+}
